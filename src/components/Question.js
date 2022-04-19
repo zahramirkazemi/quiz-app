@@ -4,6 +4,5 @@ const Question = ({question}) => {
             <p className="text-xs md:text-base lg:text-lg inline-block font-sans font-semibold">{question}</p>
         </div>
      );
-}
- 
+} 
 export default Question;
