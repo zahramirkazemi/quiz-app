@@ -35,8 +35,12 @@ function App() {
     fetchData();
     setQuestionNumber(0);
     setScore(0)
-    setReset(false);
   },[reset]);
+
+  const submitReset = () => {
+    setOpenGameOver(false);
+    setReset(reset => !reset);
+  }
 
   const submitAnswer = (userAnswer) => {
     if(questionNumber <= questionCount){
@@ -91,7 +95,7 @@ function App() {
         pauseOnHover
         theme={"dark"}
       />
-      {OpenGameOver && <GameOver setReset={setReset} setOpenGameOver={setOpenGameOver} score={score} questionCount={questionCount+1} />}
+      {OpenGameOver && <GameOver submitReset={submitReset} score={score} questionCount={questionCount+1} />}
       <Board title="Question" number={questionNumber + 1} descrip={`of ${questionCount + 1}`} position="left"/>
       <QuizCard quiz={quiz} submitAnswer={submitAnswer} questionNumber={questionNumber}/>
       <Board title="Score" number={score} descrip="point" position="right"/>
