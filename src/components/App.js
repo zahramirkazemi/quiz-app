@@ -55,7 +55,7 @@ function App() {
           progress: undefined,
           theme: "dark"
           });
-        setScore(score+1);
+        setScore(score => score+1);
       }
       else{
         toast.error(' False ! ', {
@@ -74,7 +74,7 @@ function App() {
 
   const isLastQuestion = () => {
     if(questionNumber < questionCount){
-      setQuestionNumber(questionNumber+1);
+      setQuestionNumber(questionNumber => questionNumber+1);
     }    
     else{
       setOpenGameOver(true);
