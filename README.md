@@ -1,9 +1,9 @@
 # quiz-app
 ### Responsive Quiz App using react and json-server.
 &nbsp;
-### Question jsons available in https://my-json-server.typicode.com/zahramirkazemi/quiz-api/Question
+### Question jsons available in https://my-json-server.typicode.com/zahramirkazemi/projects-api/Question
 #### You can add, edit, delete Question with Restful request.
-#### Question api repo https://github.com/zahramirkazemi/quiz-api
+#### Question api repo https://github.com/zahramirkazemi/projects-api
 &nbsp;
 
 &nbsp;
